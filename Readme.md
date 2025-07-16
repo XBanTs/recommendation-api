@@ -54,4 +54,5 @@ curl -X GET "http://localhost:8000/movies/"
 4. **Auto-Retraining**: The model retrains automatically when new movies or ratings are added
 5. **Caching**: Trained models are cached using joblib for fast predictions
 
-[!NOTE]
+> [!NOTE]
+> I have used the PostgreSQL Database for Model training and User ratings.  You can also use CSVs for your preferences to train the model.
