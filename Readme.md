@@ -39,13 +39,6 @@ Once running, visit `http://localhost:8000/docs` for interactive API documentati
 ### Recommendations
 - **GET** `/recommend/{movie}?top_n={number}` - Get movie recommendations
 
-## Usage Examples
-
-### Get All Movies
-```bash
-curl -X GET "http://localhost:8000/movies/"
-```
-
 ## How It Works
 
 1. **Data Storage**: Movies and ratings are stored in a relational database
