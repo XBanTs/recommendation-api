@@ -1,0 +1,5 @@
+movies.csv
+ratings.csv
+model.pkl
+__pycache__
+/venv
