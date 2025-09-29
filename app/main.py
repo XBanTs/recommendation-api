@@ -28,7 +28,11 @@ def reload_model():
 @app.on_event("startup")
 async def on_startup():
     await init_db()
+    if not os.path.exists("model.pkl"):
+        print("⚠️ model.pkl not found — training a fresh model...")
+        await train_model()
     reload_model()
+
 
 
 @app.get("/", tags=["Root"])
